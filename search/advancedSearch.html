@@ -3,7 +3,28 @@
 
 <head>
     <title>Search</title>
-    <link rel="stylesheet" href="styles2.css">
+    <script>
+        (function () {
+            const version = Date.now();
+
+            function loadCSS(href) {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = href + '?v=' + version;
+                document.head.appendChild(link);
+            }
+
+            function loadJS(src) {
+                const script = document.createElement('script');
+                script.src = src + '?v=' + version;
+                document.head.appendChild(script);
+            }
+
+            loadCSS('assets/css/styles2.css');
+            loadJS('assets/js/app.js');
+        })();
+    </script>
+
 </head>
 
 <body>

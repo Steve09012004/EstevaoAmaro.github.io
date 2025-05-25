@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div id="links">
-                <a href="index.html">Google Search</a>
-                <a href="advancedSearch.html">Advanced Search</a>
-            </div>
-        </header>
-        <form action="https://www.google.com/search">
-            <h1>Google</h1>
-            <div class="inputs">
-                <input type="text" name="q">
-                <input type="hidden" name="tbm" value="isch">
-                <div class="Buttons">
-                    <input type="submit" value="Search Images">
-                </div>
-            </div>
-        </form>
 
-        <footer><p>Developed by Estevão Amaro - Project 0 - Havard - CS50, CSS3 and HTML5</p></footer>
-    </body>
+<head>
+    <title>Search</title>
+    <script>
+        (function () {
+            const version = Date.now();
+
+            function loadCSS(href) {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = href + '?v=' + version;
+                document.head.appendChild(link);
+            }
+
+            function loadJS(src) {
+                const script = document.createElement('script');
+                script.src = src + '?v=' + version;
+                document.head.appendChild(script);
+            }
+
+            loadCSS('assets/css/styles.css');
+            loadJS('assets/js/app.js');
+        })();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div id="links">
+            <a href="index.html">Google Search</a>
+            <a href="advancedSearch.html">Advanced Search</a>
+        </div>
+    </header>
+    <form action="https://www.google.com/search">
+        <h1>Google</h1>
+        <div class="inputs">
+            <input type="text" name="q">
+            <input type="hidden" name="tbm" value="isch">
+            <div class="Buttons">
+                <input type="submit" value="Search Images">
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <p>Developed by Estevão Amaro - Project 0 - Havard - CS50, CSS3 and HTML5</p>
+    </footer>
+</body>
+
 </html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+footer, form .inputs .Buttons, form .inputs, form, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #202124;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 16px 11px;
+}
+header div a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 350;
+}
+
+form {
+  color: white;
+  width: 100%;
+}
+form h1 {
+  font-size: 86px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  margin: 0;
+}
+form .inputs {
+  max-width: 584px;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+form .inputs input[type=text] {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 44px;
+  width: 638px;
+  max-width: 584px;
+  padding-left: 14px;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: #4d5156;
+  box-shadow: none;
+  outline: none;
+  line-height: 22px;
+  font-size: 16px;
+}
+form .inputs .Buttons {
+  flex-direction: row;
+  height: 70px;
+  font-size: 14px;
+}
+form .inputs .Buttons input[type=submit] {
+  font-size: 14px;
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+form .inputs .Buttons input[type=submit]:hover {
+    border-color: #4d5156;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  color: white;
+  background: #171717;
+  font-weight: 300;
+  font-size: 14px;
+}

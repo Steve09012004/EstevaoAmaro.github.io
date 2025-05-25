@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+footer, .formContainer form .inputs .Buttons, .formContainer form .inputs .input, .formContainer form, header #topApp, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #202124;
+  height: 100vh;
+  align-items: start;
+  justify-content: start;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 16px 11px;
+}
+header #topApp {
+  width: 100%;
+  height: 45px;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+header #topApp h2 {
+  font-weight: 400;
+  color: #e8eaed;
+}
+header #appTitle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  font-size: 18px;
+  margin: 25px 35px;
+  color: #f28b82;
+}
+header #appTitle h3 {
+  font-weight: 400;
+}
+header div a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 350;
+}
+
+.line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin-top: 137px;
+}
+
+.formContainer {
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 45px;
+}
+.formContainer form {
+  align-items: start;
+  justify-content: space-around;
+}
+.formContainer form #titleSpan {
+  clear: both;
+  width: 100%;
+  height: 30px;
+  display: table-cell;
+  color: #e8eaed;
+  float: left;
+  min-width: 167px;
+  font-size: 16px;
+  min-height: 42px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.formContainer form h1 {
+  font-size: 86px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.formContainer form .inputs {
+  width: 100%;
+}
+.formContainer form .inputs label {
+  color: #969ba1;
+  font-size: 13px;
+  width: 167px;
+}
+.formContainer form .inputs .input {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+.formContainer form .inputs .input input {
+  border: 1px solid #5c5f5e;
+  background: #202124;
+  color: #bdc1c6;
+  border-radius: 1px;
+  font-size: 13px;
+  min-width: 167px;
+  width: 50%;
+  height: 29px;
+  padding: 1px 8px;
+  flex-direction: row;
+}
+.formContainer form .inputs .Buttons {
+  width: 65%;
+  flex-direction: row;
+  justify-content: start;
+  height: 70px;
+  font-size: 14px;
+}
+
+.formContainer form .inputs .Buttons input[type=submit] {
+  font-size: 11px;
+  background-color: #8ab4f8;
+  color: #171717;
+  border: 1px solid #8ab4f8;
+  border-radius: 4px;
+  align-items: center;
+  margin: 11px 4px;
+  padding: 0 12px;
+  line-height: 27px;
+  margin-left: auto;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.formContainer form .inputs .Buttons input[type=submit]:hover {
+    background: #c7dbfb;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  margin-top: auto;
+  color: white;
+  background: #171717;
+  font-weight: 300;
+  font-size: 14px;
+}

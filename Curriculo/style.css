@@ -28,7 +28,6 @@ body {
     align-content: center;
     justify-items: center;
     background: rgb(14, 14, 14);
-    overflow: hidden;
 }
 
 .bio {

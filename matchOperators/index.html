@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Operações para seu dia a dia</h1>
+    </header>
+
+    <h1>Seja Bem Vindo, <span style="color: rgb(65, 115, 189);" id="fullname"></span>!</h1>
+
+    <main>
+        <div class="container">
+            <h2>Bora fazer uma soma?</h2>
+            <form action="#">
+                <input id="numberOne" type="number" placeholder="Primeiro número">
+                <span>+</span>
+                <input id="numberTwo" type="number" placeholder="Segundo número">
+                <span>=</span>
+                <input id="result" type="text" disabled>
+                <button onclick="soma()">Somar</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Bora converter seu dinheiro para Dollar!</h2>
+            <form action="#">
+                <input id="money" type="number" placeholder="Quanto você tem em R$">
+                <input id="cotation" type="number" placeholder="Cotação">
+                <span>==></span>
+                <input id="dollarResult" type="text" disabled>
+                <button onclick="toDollarConvert()">Converter</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Bora calcular o valor do terreno baseado na sua área e valor por M² !</h2>
+            <form action="#">
+                <input type="number" id="largura" placeholder="Largura do terreno">
+                <input type="number" id="comprimento" placeholder="Comprimento do terreno">
+                <input type="number" id="areavalue" placeholder="O valor do M²">
+                <span>==></span>
+                <input type="text" id="terrainValue" disabled>
+                <button onclick="terrainAreaCalculator()">Calcular</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Bora calcular o quanto de gasolina seu carro gasta em média por Km !</h2>
+            <form action="#">
+                <input type="number" id="distancia" placeholder="Distancia percorrida">
+                <input type="number" id="gasolinaGasta" placeholder="Total de gasolina gasto">
+                <span>==></span>
+                <input type="text" id="gasolinaMedia" disabled>
+                <button onclick="mediaGasolineCalculator()">Calcular</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Vamos calcular a sua média de notas !!! Espero que tenha estudado 😁</h2>
+            <form action="#">
+                <input type="number" id="note1" placeholder="Primeira Nota">
+                <input type="number" id="note2" placeholder="segunda Nota">
+                <input type="number" id="note3" placeholder="Terceira Nota">
+                <input type="number" id="note4" placeholder="Quarta Nota">
+                <span>==></span>
+                <input type="text" id="noteMedia" disabled>
+                <button onclick="noteMediaCalculator()">Calcular Média</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Vamos converter a temperatura atual em ºF para ºC:</h2>
+            <form action="#" >
+                <input type="number" id="emF" placeholder="Graus em °F">
+                <span>==></span>
+                <textarea id="celcius" disabled cols="25" rows="5"></textarea>
+                <button onclick="temperatureConvertor()">Converter</button>
+            </form>
+        </div>
+    </main>
+    
+    <script src="script2.js"></script>
+</body>
+</html>

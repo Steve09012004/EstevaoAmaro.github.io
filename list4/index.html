@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de exercicios 04
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Exercícios 04</h1>
+        <div class="divisor"></div>
+        <img src="images/senai-165.png" alt="senaiLogo">
+    </header>
+
+
+    <main id="main">
+        <div class="content">
+            <h1 id="content"></h1>
+        </div>
+        <div class="result">
+            <h1 id="result"></h1>
+        </div>
+
+        <ul>
+            
+            <li>
+                <button onclick="ex1()">Ex01
+                </button>
+            </li>
+            <li>
+                <button onclick="ex2()">Ex02
+                </button>
+            </li>
+            <li>
+                <button onclick="ex3()">Ex03
+                </button>
+            </li>
+            <li>
+                <button onclick="ex4()">Ex04
+                </button>
+            </li>
+            <li>
+        </ul>
+        <ul class="ex05Box">
+                <h3>Ex 05 - Lista de Compras</h3>
+                <button onclick="inserirItem()">Inserir item</button>
+                <button onclick="showList()">Ver Lista completa</button>
+
+            </div>
+        </ul>
+    </main>
+    <div id="hiddenItems">
+        <input type="text" id="inputItem" placeholder="Item: Ex.: Maçã">
+        <input type="number" id="inputItemPrice" placeholder="Preço Ex.: 14,99">
+        <button onclick="additem()">Adicionar</button>
+        <span onclick="closeInput()" class="icon">❌</span>
+    </div>
+
+    <div id="hiddenList">
+        <ul id="itemList">
+
+        </ul>
+    </div>
+
+
+    <footer>
+        <h5>Lista de Exercícios 03 - Desenvolvido por Estevão Amaro - Aluno Senai</h5>
+        <div class="divisor"></div>
+        <img src="images/brasao-familia-amaro.png" alt="senaiLogo">
+    </footer>
+
+    <div class="success">
+        <p>Adicionado com sucesso</p><span onclick="closeSucess()" class="icon2">❌</span>
+    </div>
+    <div class="success success2">
+        <p>Erro ao tentar adicionar</p><span onclick="closeSucess2()" class="icon2">❌</span>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
